@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <title>login</title>
+  <style>
+    .box {
+      position: relative;
+      top: -3vw;
+      left: calc(50% - 3vw);
+      background: rgba(0, 0, 255, 0.3);
+    }
+
+    .row {
+      position: relative;
+      top: -3vw;
+    }
+
+    input {
+      border-left-color: white !important;
+    }
+
+    .container {
+      border-radius: 20px;
+    }
+
+    .container-fluid {
+      background: url(./bg.jpg) no-repeat center/cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid d-flex align-items-center bg-info vh-100">
+    <div class="container bg-light w-25" style="background: rgba(255, 255, 255, 0.3) !important">
+      <div class="box rounded-circle d-flex align-items-center justify-content-center"
+        style="width: 6vw;height: 6vw;font-size: calc(1rem + 2vw);color: white;"><i class="far fa-user"></i></div>
+      <div class="row mx-2">
+        <div class="col text-center">
+          <p class="text-black-50 h2 mb-4">Sign In</p>
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white border-right-0"><i class="fas fa-user"></i></div>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Username">
+          </div>
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white"><i class="fas fa-lock"></i></div>
+            </div>
+            <input type="text" class="form-control" id="password" placeholder="Password">
+          </div>
+          <div class="input-group mb-4">
+            <button type="button" class="btn btn-primary btn-block">Login</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-2">
+        <div class="col-6">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="rememberMe">
+            <label class="custom-control-label" for="rememberMe"><small>Remember me</small></label>
+          </div>
+        </div>
+        <div class="col-6 text-right">
+          <small>Forget Password?</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
